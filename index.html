@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Калькулятор задач</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <h1 class="intgames">Популярні інетрактивні ігри</h1>
+ <div class="line"></div>
+  <h2 class="maintext">Перевір в який рік ти народився</h2>
+<div class="gameblok">
+      <input type="number" id="yearInput" class="yearinput" placeholder="Введіть рік">
+      <button class="yearcheckbtn" onclick="checkLeapYear()"><img src="Group 104.svg" alt=""></button>
+      <p class="outputtext">Ви народилися у високосний рік!</p>
+</div>
+
+<div class="line"></div>
+<h2 class="maintext">Вгадай число, яке загадав комп’ютер</h2>
+<div class="numberblok">
+  <input type="number" id="guessNinput" class="guessNinput" placeholder="Введіть число">
+  <button onclick="checkGuessNumber()"><img src="Group 104.svg" alt=""></button>
+  <p class="outputNtext">Вітаю, ви вгадали число! (number) </p>
+</div>
+
+<div class="line"></div>
+
+<h2 class="maintext">Калькулятор часу</h2>
+<div class="bloktime">
+  <div class="boxtimeint"><input type="number" id="timekalckinput" class="timeinput" placeholder="Введіть число"></div>
+  <button onclick="checktimekalck()"><img src="Group 104.svg" alt=""></button>
+  <img class="linetime" src="Vector 220.svg" alt="">
+  <p class="outputtime">3 дн. 15:45:01</p>
+</div>
+
+<div class="line"></div>
+
+<h2 class="maintext">Введіть 3 числа</h2>
+<div class="maxnumblok">
+  <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+  <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+  <input type="number" id="maxnuminput" class="maxnuminput" placeholder="Введіть число">
+</div>
+ <div>
+  <p id="result" class="outputtexty">Найбільше число, яке ви ввели - (число)</p>
+ </div>
+ <div class="line"></div>
+  <script src="script.js"></script>
+</body>
+</html>
